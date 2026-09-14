@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<!-- Una universidad local le pidió que creara un documento de HTML5 que 
+permita a los futuros estudiantes universitarios proveer retroalimentación 
+sobre su visita al campus. Su documento de HTML5 debe contener un formulario
+con capos de texto para un nombre y un correo electrónico. Proporcione 
+casillas de verificación que permitan a los futuros estudiantes índicar lo 
+que les gustó más sobre el campus. Las casillas de verificación deben 
+incluir: campus, estudiantes, ubicación, ambiente, dormitorios y deportes.
+Proporcione además botones de opción que pregunten a los futuros estudiantes cómo supieron sobre la universidad. Las opciones deben incluir: amigos, 
+televisión, Internet y otro. Además, proporcione un área de texto para
+comentarios adicionales, un botón para enviar y un botón para reestablecer.
+Use post para enviar información en el formulario a http://www.deitel.com.
+-->
+
+<html>
+  <head>
+    <meta charset = "utf-8">
+    <title>Ejercicio 14</title>
+  </head>
+  <body>
+    <form method = "post" action = "http://www.deitel.com">
+      <label>
+        <p>Nombre: 
+        <input name = "Nombre: " type="text" size = "20" maxlength = "50">
+        </p>
+      </label>
+      <label>
+        <p>Correo: 
+        <input name = "Correo: " type="text" size = "30" maxlength = "70">
+        </p>
+      </label>
+      <label>
+        <p><strong>Lo que m&aacute;s me gust&oacute; del campus:</strong></p>
+      </label>
+      <p>
+        <label>Campus
+          <input name = "masgusto" type = "checkbox" value = "campus">
+        </label> 
+        <label>Estudiantes
+          <input name = "masgusto" type = "checkbox" value = "Estudiantes">
+        </label>
+      </p>
+      <p>
+        <label> Ubicaci&oacute;n
+          <input name = "masgusto" type = "checkbox" value = "Ubicaci&oacute;n"  >
+        </label>
+        <label> Ambiente
+          <input name = "masgusto" type = "checkbox" value = "Ambiente" >
+        </label>
+      </p>
+      <p>
+        <label> Dormitorios
+          <input name = "masgusto" type = "checkbox" value = "Dormitorios">
+        </label>
+        <label> Deportes
+          <input name = "masgusto" type = "checkbox" value = "Deportes">
+        </label>
+      </p>
+      <p>
+        <strong>¿C&oacute;mo me enter&eacute; de la universidad?</strong>
+        <br><br>
+        <label>Amigos
+          <input name = "comosupe" type="radio" value = "amigos">
+        </label>
+        <label>Televisi&oacute;n
+          <input name = "comosupe" type="radio" value = "televisión">
+        </label>
+        <label>Internet
+          <input name = "comosupe" type="radio" value = "internet">
+        </label>
+        <label>Otro
+          <input name = "comosupe" type="radio" value = "otro">
+        </label>
+      </p>
+      <p>
+        <label><strong>Comentarios adicionales:</strong>
+          <br><br>
+          <textarea rows="4" cols="30"></textarea>
+        </label>
+      </p>
+      <p>
+        <input type="submit" value = "Enviar">
+        <input type = "reset" value = "Borrar">
+      </p>
+    </form>
+    <p>
+      <a href="../Ejercicios/"><strong>Ir al men&uacute;</strong></a>
+      
+      <a href="../Ejercicios/Ejercicio13.html"><strong>Anterior</strong></a>
+      
+      <a href="../Ejercicios/Ejercicio15.html"><strong>Siguiente</strong></a>
+      <br>
+    </p>
+  </body>
+</html>

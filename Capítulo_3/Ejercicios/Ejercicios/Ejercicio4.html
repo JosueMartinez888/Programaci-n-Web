@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset = "utf-8">
+    <title>Ejercicio 4</title>
+  </head>
+  <body>
+    <h3>Cree un formulario de registro de un sitio Web para obtener el 
+      primer nombre, apellido y direcci&oacute;n de correo 
+      electr&oacute;nico de un usuario. Incluya adem&aacute;s una 
+      pregunta de encuesta opcional que pida el año en el que se 
+      encuentra el usuario en la universidad (por ejemplo, primer año). 
+      Coloque la pregunta de encuesta opcional en el elemento 
+      <em>details</em> que el usuario puede expandir para ver la pregunta.
+    </h3>
+    <form>
+      <label>Primer nombre:
+        <input type="text" name="primernombre">
+      </label>
+      <br><br>
+      <label>Apellido
+        <input type="text" name="apellido">
+      </label>
+      <br><br>
+      <label>Direcci&oacute;n de correo electr&oacute;nico
+        <input type="mailto" name="correoelectronico">
+      </label>
+      <br><br>
+      <details>
+        <summary><strong>Pregunta de encuesta opcional</strong></summary>
+        <p>
+          <form>
+            <label>¿En qu&eacute; a&ntilde;o de la universidad te encuentras?</label>
+            <br>
+            <br>
+            <input type="number"
+            min = "1"
+            max = "6"
+            value = "1">
+            </datalist>
+          </form>
+        </p>
+      </details>
+      <br>
+      <input type="submit" value ="Enviar">
+      <input type="reset" value="Borrar">
+    </form>
+    <p>
+    <strong>
+      <a href="../Ejercicios/">Men&uacute;</a>
+      <a href="../Ejercicios/Ejercicio3.html">Anterior</a>
+      <a href="../Ejercicios/Ejercicio5.html">Siguiente</a>
+    </strong>
+    </p>
+  </body>
+</html>
+
