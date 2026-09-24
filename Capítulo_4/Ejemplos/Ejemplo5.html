@@ -1,0 +1,44 @@
+<!DOCTYPE>
+
+<!-- Fig 4.9: posicionamiento.html-->
+<!-- Posicionamiento absoluto de los elementos-->
+
+<html>
+  <head>
+    <meta charset = "utf">
+    <title>Posicionamiento absoluto</title>
+    <style type = "text/css">
+      .imagen_fondo { position: absolute;
+                      top: 0px; 
+                      left: 0px;
+                      z-index: 1; 
+                      /*Por lo que busqué pinter-events: none sirve para 
+                       que en caso de que le des a la imagen y esta está 
+                       superpuesta no interactue con la imagen, sino que 
+                       imagine que esta no está*/
+                      pointer-events: none; }
+      .imagen_primerplano { position: absolute; 
+                            top: 25px;
+                            left: 100px; 
+                            z-index: 2;  
+                            pointer-events: none; }
+      .texto { position: absolute; 
+              top: 25px; 
+              left: 100px; 
+              z-index: 3; 
+              font-size: 20pt; 
+              font-family: tahoma, geneva, sans-serif; }
+    </style>
+  </head>
+  <body>
+    <p><img src="./Ejemplo5_images/imagen_fondo.png" class = "imagen_fondo"
+    alt="Primera imagen posicionada"></p>
+    <p><img src="./Ejemplo5_images/image_primerplano.png" class = "imagen_primerplano" alt="Segunda imagen posicionada"></p>
+    <p class = "texto">Texto posicionado</p>
+    <p>
+    <a href="../Ejemplos/"><strong>Men&uacute;</strong></a>
+    <a href="../Ejemplos/Ejemplo4.html"><strong>Anterior</strong></a>
+    <a href="../Ejemplos/Ejemplo6.html"><strong>Siguiente</strong></a>
+    </p>
+  </body>
+</html>

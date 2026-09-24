@@ -1,0 +1,27 @@
+div a{
+  border: 1px thick; 
+  background-color: blue;
+  color: white;
+}
+
+div a:hover {
+  background-color: yellow;
+  color: black; 
+}
+
+nav { font-weight: bold;
+      color:white; 
+      background-color: royalblue;
+      border: 2px solid royalblue;
+      text-align: center;
+      width: 8.8em}
+
+nav table {margin: 0;
+        padding: 0}
+
+nav:hover table tbody {display:table-row-group;}
+nav table tbody {display: none; background-color: white;}
+
+nav a {color: white;
+       text-decoration: none;}
+nav tbody a {color: black}

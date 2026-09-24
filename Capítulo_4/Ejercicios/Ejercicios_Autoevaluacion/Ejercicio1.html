@@ -1,0 +1,67 @@
+<!DOCTYPE>
+
+<html>
+  <head>
+    <meta charset = "utf-8">
+    <title>Ejercicio 1</title>
+    <style type = "text/css">
+      h2  { color: brown; }
+      a strong { background-color: CornflowerBlue;
+        color: white}
+      .directions_border {border-style: solid}
+      .directions_color {border-color: black}
+      nav { font-weight: bold;
+            color:white; 
+            background-color: royalblue;
+            border: 2px solid royalblue;
+            text-align: center;
+            width: 9.5em}
+      nav table {margin: 0;
+              padding: 0}
+      nav:hover table tbody {display:table-row-group;}
+      nav table tbody {display: none; background-color: white;}
+      nav a {color: white;
+             text-decoration: none;}
+      nav tbody a {color: black}
+    </style>
+  </head>
+  <body>
+    <h2>Supongamos que el tamaño de la fuente base en un sistema es de 12 puntos.</h2>
+    <p><strong>a) ¿Qu&eacute; tan grande es una fuente de 36 puntos en em?</strong><br>
+    son de 3 em (porque si el valor original es de 12, entonces 36/12 = 3) 
+    <br><br><strong>b) ¿Qu&eacute; tan grande es una fuente de 9 puntos en em?</strong><br>
+    sería 0.75 em (porque 9/12 es 0.75)
+    <br><br><strong>c) ¿Qu&eacute; tan grande es una fuente de 24 puntos en picas?</strong><br>
+    2 picas (1 pica son 12 puntos entonces 24 putos son 2 picas)
+    <br><br><strong>d) ¿Qu&eacute; tan grande es una fuente de 12 putnos en pulgadas?</strong><br>
+    1.666 periodico (porque un una punto es 1/72 de pulgada entonces 12/72 
+    son 1.666 pulgadas)
+    <br><br><strong>e) ¿Qu&eacute; tan grande es una fuente de 1 pulgada en picas?</strong><br>
+    6 picas (si una pica son 12 puntos y 1 pulgada son 72 puntos, entonces 
+    aplicando 72/12 es 6, dando a entender que son necesarias 6 picas para 
+    tener una pulgada)</p>
+
+    <br>
+    <nav>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Menú</th>
+            <th><a href="./Ejercicio2.html">Siguiente</a></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td colspan="3"><a href="../">Regresar</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><a href="./Ejercicio1.html">Ejercicio1</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><a href="./Ejercicio2.html">Ejercicio2</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </nav>
+  </body>
+</html>
