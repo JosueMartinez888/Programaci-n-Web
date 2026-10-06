@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<!-- Fig. 5.1: multicolumna.html -->
+<!-- Texto multicolumna en CSS3.-->
+<html>
+  <head>
+    <meta charset = "utf-8">
+    <title>Varias columnas</title>
+    <style type = "text/css">
+      p { margin: 0.9em 0em;}
+      .multicolumna 
+        {
+        /* establecer el número de columnas en 3 */ 
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        -o-column-count: 3;
+        column-count: 3;
+        /* establecer el espacio entre columnas en 30px */ 
+        -webkit-column-gap: 30px;
+        -moz-column-gap: 30px;
+        -o-column-gap: 30px;
+        column-gap: 30px;
+        /* agregar una linea negra de 1px entre cada columna */ 
+        -webkit-column-rule: 1px outset black;
+        -moz-column-rule: 1px outset black;
+        -o-column-rule: 1px outset black;
+        column-rule: 1px outset black;
+      }
+      nav {
+        font-weight: bold;
+        color: white; 
+        background-color: royalblue;
+        border: 2px solid royalblue;
+        text-align: center;
+        width: 14.6em
+      }
+
+      nav table {
+        margin: 0;
+        padding: 0
+      }
+
+      nav:hover table tbody {
+        display: table-row-group;
+      }
+
+      nav table tbody {
+        display: none;
+        background-color: white;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+      }
+
+      nav tbody a {
+        color: black
+      }
+    </style>
+  </head>
+  <body>
+    <header><h1>Computadoras, hardware y software</h1></header>
+    <div class = "multicolumna">
+      <p>Una computadora es un dispositivo que puede realizar 
+      c&iacute;rculos y tomar deciciones l&oacute;gicas con mucha 
+      m&aacute;s rapidez que los humanos. 
+      Muchas de las computadoras personales de la actualidad pueden 
+      realizar miles de millones de c&aacute;lculos en un segundo&mdash;
+      m&aacute;s de lo que un humano puede realizar durante toda su vida 
+      . Las supercomputadoras ya se encuentran realizando miles de billones
+      (trillones) de instrucciones por segundo. Para poner esto en  
+      perspectiva, una computadora de un trill&oacute;n de instrucciones 
+      por segundo puede realizar en un segundo m&aacute;s de 100,000 
+      c&aacute;lculos para cada persona en el planeta. Y&mdash;estos 
+      "l&iacute;mites superiores" aumentan con rapidez.</p>
+      <p>Las computadoras procesan datos bajo el control de conjuntos de 
+      instrucciones llamadas programadores de computadora. Los programas 
+      que se ejecutan en una computadora se conocen como software. En este 
+      libro usted aprender&aacute; sobre la metodolog&iacute;a de 
+      programaci&oacute;n clave de la actualidad que mejora la 
+      productividad, con lo cual se reducen los costos de desarrollo de 
+      software&mdash;programaci&oacute;n orientada a objetos</p>
+      <p>Una computadora consiste de diversos dispositivos conocidos como 
+      hardware (por ejemplo: el teclado, pantalla, rat&oacute;n, discos 
+      duros, memoria, DVD y unidades de procesamiento). Los costos de las 
+      computadoras disminuyen en forma dram&aacute;tica, debido a los 
+      r&aacute;pidos desarrollos en las tecnolog&iacute;as de hardware y 
+      software. Las computadoras que podr&iacuet;an haber llenado salones 
+      extensos y costar millones de d&oacute;lares hace unas d&eacute;cadas
+      ahora se inscriben en chips de silicio m&aacute;s chicos que 
+      u&ntilde;a, que cuestan tal vez unos cuantos d&oacute;lares. Por 
+      iron&iacute;a, el silicio es uno de llos materiales m&aacute;s 
+      abundantes&mdash; es un ingrediente en la arena ordinaria. La 
+      tecnolog&iacute;a de chips de silicio ha hecho la computaci&oacute;n 
+      tan econ&oacute;mica que hay m&aacute;s de mil millones de 
+      computadoras de prop&oacute;sito general en uso en todo el mundo, y 
+      se espera qeu esta cifra se duplique en los pr&oacute;ximos 
+      a&ntild;os</p>
+      <p>Los chips de computadora (microporcesadores) controlan 
+      innumerables dispositivos. Estos sistemas incrustados incluyen 
+      frenos aintibloqueo en los autos, sistemas de navegaci&oacute;n 
+      electrodom&eacute;sticos inteligentes, sistemas de seguridad en el 
+      hogar, tel&eacute;fonos celulares y Smartphones, robots, 
+      intersecciones de tr&aacute;fico inteligentes, sistemas para evitar 
+      colisiones, controladores de videojuegos y m&aacute;s. La inmensa 
+      mayor&iacute;a de los microporcesadores que se producen cada 
+      a&ntilde;o se incrustan en dispositivos que no son computadoras de 
+      prop&oacute;sito general.</p>
+      <footer>
+        <em>&copy; 2012 por Pearson Education, Inc.
+            Todos los derechos reservados</em>
+      </footer>
+    </div>
+    <br>
+    <nav>
+      <table border = "1">
+        <thead>
+          <th>Menú</th>
+          <td><a href="./Ejemplo15.html"><strong>Anterior</strong></a></td>
+          <td><a href="./Ejemplo17.html"><strong>Siguiente</strong></a></td>
+        </thead>
+        <tbody>
+          <tr>
+            <td colspan = "3"><a href="../">Regresar</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><a href="./Ejemplo1.html">Ejemplo1</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><a href="./Ejemplo2.html">Ejemplo2</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><a href="./Ejemplo3.html">Ejemplo3</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><a href="./Ejemplo4.html">Ejemplo4</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><a href="./Ejemplo5.html">Ejemplo5</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><a href="./Ejemplo6.html">Ejemplo6</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><a href="./Ejemplo7.html">Ejemplo7</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><a href="./Ejemplo8.html">Ejemplo8</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><a href="./Ejemplo9.html">Ejemplo9</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><a href="./Ejemplo10.html">Ejemplo10</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><a href="./Ejemplo11.html">Ejemplo11</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><a href="./Ejemplo12.html">Ejemplo12</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><a href="./Ejemplo13.html">Ejemplo13</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><a href="./Ejemplo14.html">Ejemplo14</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><a href="./Ejemplo15.html">Ejemplo15</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><a href="./Ejemplo16.html">Ejemplo16</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><a href="./Ejemplo17.html">Ejemplo17</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </nav>
+  </body>
+</html>

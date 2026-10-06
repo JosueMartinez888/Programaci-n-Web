@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<!-- Fig. 5.4: gradientelineal.html-->
+<!-- Gradientes lineales en CSS3. -->
+<html>
+  <head>
+    <meta charset = "utf-8">
+    <title>Gradiente lineal</title>
+    <style type = "text/css">
+      div {
+        width: 200px;
+        height: 200px;
+        border: 3px solid navy;
+        padding: 5px 20px;
+        text-align: center;
+        background: -webkit-gradient(
+          linear, center top, center bottom, color-stop(15%, White), 
+          color-stop(50%, lightsteelblue), color-stop(75%, navy));
+        background: -moz-linear-gradient(
+          top center, white 15%, lightsteelblue 50%, navy 75%);
+        background: linear-gradient(
+          top, White 15%, lightsteelblue 50%, navy 75%);
+        float: left;
+        margin-right: 15px;
+      }
+      #horizontal
+        {
+        width: 200px;
+        height: 200px;
+        border: 3px solid orange;
+        padding: 5px 20px;
+        text-align: center;
+        background: -webkit-gradient(
+          linear, left top, right top, color-stop(15%, white),
+          color-stop(50%, yellow), color-stop(75%, orange));
+        background: -moz-liner-gradient(
+          left, white 15%, yellow 50%, orange 75%);
+        background: linear-gradient(
+          left, white 15%, yellow 50%, orange 75%);
+        margin-right: 15px;
+      }
+      #diagonal
+        {
+        width: 200px; 
+        height: 200px;
+        border: 3px solid purple; 
+        padding: 5px 20px;
+        text-align: center;
+        background: -webkit-gradient(
+          linear, left top, right bottom, color-stop(15%, white),
+          color-stop(50%, plum), color-stop(75%, purple) );
+        background: -moz-linear-gradient(
+          top left, white 15%, plum 50%, purple 75% );
+        background: linear-gradient(
+          135deg, white 15%, plum 50%, purple 75% );
+      }
+      nav {
+        font-weight: bold;
+        color: white; 
+        background-color: royalblue;
+        border: 2px solid royalblue;
+        text-align: center;
+        width: 14.6em
+      }
+
+      nav table {
+        margin: 0;
+        padding: 0
+      }
+
+      nav:hover table tbody {
+        display: table-row-group;
+      }
+
+      nav table tbody {
+        display: none;
+        background-color: white;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+      }
+
+      nav tbody a {
+        color: black
+      }
+    </style>
+  </head>
+  <body>
+    <div><h2>Gradiente linear vertical</h2></div>
+    <div id = "horizontal"><h2>Gradiente lineal horizontal</h2></div>
+    <div id = "diagonal"><h2>Gradiente lineal diagonal</h2></div>
+    <br><br><br><br><br><br><br><br><br>
+    <br><br><br>
+    <nav>
+      <table border = "1">
+        <thead>
+          <th>Menú</th>
+          <td><a href="./Ejemplo3.html"><strong>Anterior</strong></a></td>
+          <td><a href="./Ejemplo5.html"><strong>Siguiente</strong></a></td>
+        </thead>
+        <tbody>
+          <tr>
+            <td colspan = "3"><a href="../">Regresar</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><a href="./Ejemplo1.html">Ejemplo1</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><a href="./Ejemplo2.html">Ejemplo2</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><a href="./Ejemplo3.html">Ejemplo3</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><a href="./Ejemplo4.html">Ejemplo4</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><a href="./Ejemplo5.html">Ejemplo5</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><a href="./Ejemplo6.html">Ejemplo6</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><a href="./Ejemplo7.html">Ejemplo7</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><a href="./Ejemplo8.html">Ejemplo8</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><a href="./Ejemplo9.html">Ejemplo9</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><a href="./Ejemplo10.html">Ejemplo10</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><a href="./Ejemplo11.html">Ejemplo11</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><a href="./Ejemplo12.html">Ejemplo12</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><a href="./Ejemplo13.html">Ejemplo13</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><a href="./Ejemplo14.html">Ejemplo14</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><a href="./Ejemplo15.html">Ejemplo15</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><a href="./Ejemplo16.html">Ejemplo16</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><a href="./Ejemplo17.html">Ejemplo17</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </nav>
+  </body>
+</html>

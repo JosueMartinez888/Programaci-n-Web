@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<!-- Fig. 5.13: inclinar.html-->
+<!-- Elemetnos de inclinación y de transformación en CSS3-->
+
+<html>
+  <head>
+    <meta charset = "utf-8">
+    <title>Inclina (skew)</title>
+    <style type = "text/css">
+      .skew .textbox 
+        {
+        margin-left: 75px; 
+        background: lightgreen;
+        height: 100px;
+        width: 200px; 
+        padding: 25px 0;
+        text-align: center;
+        font-size: 250%;
+        border: 3px solid DarkGreen;
+        border-radius: 15px;
+        -webkit-animation: skew 3s infinite linear;
+        -moz-animation: skew 3s infinite linear;
+        animation: skew 3s infinite linear;
+      }
+      @-webkit-keyframes skew 
+        {
+        from {-webkit-transform: skewX(0deg);}
+        25% {-webkit-transform: skewX(45deg);}
+        50% {-webkit-transform: skewX(0);}
+        75% {-webkit-transform: skewX(-45deg);}
+        to  {-webkit-transform: skewX(0);}
+      }
+      @-moz-keyframes skew 
+        {
+        from {-webkit-transform: skewX(0deg);}
+        25% {-webkit-transform: skewX(45deg);}
+        50% {-webkit-transform: skewX(0);}
+        75% {-webkit-transform: skewX(-45deg);}
+        to  {-webkit-transform: skewX(0);}
+      }
+      @keyframes skew 
+        {
+        from {-webkit-transform: skewX(0deg);}
+        25% {-webkit-transform: skewX(45deg);}
+        50% {-webkit-transform: skewX(0);}
+        75% {-webkit-transform: skewX(-45deg);}
+        to  {-webkit-transform: skewX(0);}
+      }
+      nav {
+        font-weight: bold;
+        color: white; 
+        background-color: royalblue;
+        border: 2px solid royalblue;
+        text-align: center;
+        width: 14.6em
+      }
+
+      nav table {
+        margin: 0;
+        padding: 0
+      }
+
+      nav:hover table tbody {
+        display: table-row-group;
+      }
+
+      nav table tbody {
+        display: none;
+        background-color: white;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+      }
+
+      nav tbody a {
+        color: black
+      }
+    </style>
+  </head>
+  <body>
+    <div class = "box skew">
+      <div class = "textbox">Inclinar texto</div>
+    </div>
+    <br>
+    <nav>
+      <table border = "1">
+        <thead>
+          <th>Menú</th>
+          <td><a href="./Ejemplo11.html"><strong>Anterior</strong></a></td>
+          <td><a href="./Ejemplo13.html"><strong>Siguiente</strong></a></td>
+        </thead>
+        <tbody>
+          <tr>
+            <td colspan = "3"><a href="../">Regresar</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><a href="./Ejemplo1.html">Ejemplo1</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><a href="./Ejemplo2.html">Ejemplo2</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><a href="./Ejemplo3.html">Ejemplo3</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><a href="./Ejemplo4.html">Ejemplo4</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><a href="./Ejemplo5.html">Ejemplo5</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><a href="./Ejemplo6.html">Ejemplo6</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><a href="./Ejemplo7.html">Ejemplo7</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><a href="./Ejemplo8.html">Ejemplo8</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><a href="./Ejemplo9.html">Ejemplo9</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><a href="./Ejemplo10.html">Ejemplo10</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><a href="./Ejemplo11.html">Ejemplo11</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><a href="./Ejemplo12.html">Ejemplo12</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><a href="./Ejemplo13.html">Ejemplo13</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><a href="./Ejemplo14.html">Ejemplo14</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><a href="./Ejemplo15.html">Ejemplo15</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><a href="./Ejemplo16.html">Ejemplo16</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><a href="./Ejemplo17.html">Ejemplo17</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </nav>
+  </body>
+</html>

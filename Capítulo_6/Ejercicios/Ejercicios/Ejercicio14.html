@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset = "utf-8">
+    <title>Ejercicio 14</title>
+    <script>
+      var numero1, numero2, numero3, numero4, numero5;
+      var num1, num2, num3, num4, num5;
+      var menor, mayor;
+
+      numero1 = window.prompt("Introduzca el primer entero:");
+      numero2 = window.prompt("Introduzca el segundo entero:");
+      numero3 = window.prompt("Introduzca el tercer entero:");
+      numero4 = window.prompt("Introduzca el cuarto entero:");
+      numero5 = window.prompt("Introduzca el quinto entero:");
+      num1 = parseInt(numero1);
+      num2 = parseInt(numero2);
+      num3 = parseInt(numero3);
+      num4 = parseInt(numero4);
+      num5 = parseInt(numero5);
+
+      if (num1 < num2){
+        menor = num1;
+        mayor = num2; 
+        if (menor > num3){
+          menor = num3;
+        }
+        if (menor > num4){
+          menor = num4;
+        }
+        if (menor > num5){
+          menor = num5;
+        }
+        if (mayor < num3){
+          mayor = num3;
+        }
+        if (mayor < num4){
+          mayor = num4;
+        }
+        if (mayor < num5){
+          mayor = num5;
+        }
+      }
+      if (num2 < num1){
+        menor = num2;
+        mayor = num1; 
+        if (menor > num3){
+          menor = num3;
+        }
+        if (menor > num4){
+          menor = num4;
+        }
+        if (menor > num5){
+          menor = num5;
+        }
+        if (mayor < num3){
+          mayor = num3;
+        }
+        if (mayor < num4){
+          mayor = num4;
+        }
+        if (mayor < num5){
+          mayor = num5;
+        }
+      }
+
+      document.write("<h3>El número menor es: <strong>" + menor + "</strong></h3><br>");
+      document.write("<h3>El número mayor es: <strong>" + mayor + "</strong></h3><br>");
+    </script>
+
+    <style type = "text/css">
+      h3 {color: red} 
+      strong {color: teal}
+      nav { font-weight: bold;
+            color:white;
+            background-color: royalblue;
+            border: 2px solid royalblue;
+            text-align: center;
+            width: 14.6em}
+      nav table {margin: 0;
+              padding: 0}
+      nav:hover table tbody {display:table-row-group;}
+      nav table tbody {display: none; background-color: white;}
+      nav a {color: white;
+             text-decoration: none;}
+      nav tbody a {color: black}
+    </style>
+  </head>
+
+  <body>
+    
+    <br>
+    <br>
+
+    <nav>
+      <table border="1">
+        <thead>
+          <tr>
+            <th><a>Menú</a></th>
+            <th><a href="./Ejercicio13.html">Anterior</a></th>
+            <th><a href="./Ejercicio15.html">Siguiente</a></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td colspan="3"><a href="../">Regresar</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio1.html">Ejercicio1</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio2.html">Ejercicio2</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio3.html">Ejercicio3</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio4.html">Ejercicio4</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio5.html">Ejercicio5</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio6.html">Ejercicio6</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio7.html">Ejercicio7</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio8.html">Ejercicio8</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio9.html">Ejercicio9</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio10.html">Ejercicio10</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio11.html">Ejercicio11</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio12.html">Ejercicio12</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio13.html">Ejercicio13</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio14.html">Ejercicio14</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio15.html">Ejercicio15</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio16.html">Ejercicio16</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio17.html">Ejercicio17</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio18.html">Ejercicio18</a></td></tr>
+        </tbody>
+      </table>
+    </nav>
+
+  </body>
+</html>

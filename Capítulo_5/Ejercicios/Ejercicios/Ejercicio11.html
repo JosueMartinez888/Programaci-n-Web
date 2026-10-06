@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ejercicio 11</title>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Rosario" type = "text/css">
+    <style type="text/css">
+      .flexbox {
+        width: 600px;
+        height: 420px;
+        display: -webkit-box;
+        display: box;
+        -webkit-box-orient: vertical;
+        box-orient: vertical;
+      }
+      .flexbox > div 
+        {
+        -webkit-transition: 1s ease-out;
+        transition: 1s ease-out;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        border: 2px solid black;
+        width: 120px;
+        margin: 10px -10px 10px 0px;
+        padding: 20px 20px 20px 20px;
+        box-shadow: 10px 10px 10px dimgrey;
+      }
+      .flexbox > div:nth-child(1){ background-color: lightgrey; }
+      .flexbox > div:nth-child(2){ background-color: lightgrey; }
+      .flexbox > div:nth-child(3){ background-color: lightgrey; }
+      .flexbox > div:nth-child(4){ background-color: lightgrey; }
+
+      .flexbox > div:hover {
+        width: 200px; color: white; font-weight: bold; }
+      .flexbox > div:nth-child(1):hover { background-color: royalblue}
+      .flexbox > div:nth-child(2):hover { background-color: crimson}
+      .flexbox > div:nth-child(3):hover { background-color: crimson}
+      .flexbox > div:nth-child(4):hover { background-color: darkgreen}
+      p { height: 250px; overflow: hidden; font-family: "Rosario"}
+      
+      .contenedor {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 20px auto;
+      }
+
+      .caja {
+        padding: 20px;
+        margin: 5px;
+        background-color: lightblue;
+        border: 2px solid royalblue;
+        text-align: center;
+      }
+
+      nav { 
+        font-weight: bold;
+        color:white; 
+        background-color: royalblue;
+        border: 2px solid royalblue;
+        text-align: center;
+        width: 14.6em
+      }
+
+      nav table {
+        margin: 0;
+        padding: 0
+      }
+
+      nav:hover table tbody {
+        display:table-row-group;
+      }
+
+      nav table tbody {
+        display: none;
+        background-color: white;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+      }
+
+      nav tbody a {
+        color: black
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div class = "flexbox">
+      <div><img src="./Ejercicio11_images/GPP.jpg" alt="Icono de buena 
+        pr&aacute;ctica de programaci&oacute;n" width= "100" height= "100">
+        <p>Las buenas pr&aacute;cticas de programaci&oacute;n indican las 
+        t&eacute;cnicas que le ayudar&aacute;n a producir programas 
+        m&aacute;s claros, comprensibles y f&aacute;ciles de mantener.</p>
+      </div>
+      <div><img src="./Ejercicio11_images/EPT.jpg" alt="Icono de tip para 
+        prevenir errores" width= "100" height= "100">
+        <p>Los tips para prevenir errores contienen sugerencias para 
+        exponer errores y eliminarlos de sus programas; muchos describen 
+        aspectos de programaci&oacute;n que evitan que los errores entren 
+        siquiera a los programas.</p>
+      </div>
+      <div><img src="./Ejercicio11_images/CPE.png" alt="Icono de error 
+        c&oacute;mo de programaci&oacute;n" width="100" height= "100">
+        <p>Los errores comunes de programaci&oacute;n se&ntilde;alan los 
+        errores que cometen los estudiantes con frecuencia. Estos errores 
+        comunes de programaci&oacute;n reducen la probabilidad de que 
+        usted cometa los mismos errores</p>
+      </div>
+      <div><img src="./Ejercicio11_images/SEO.jpg" alt="Icono de 
+        observaci&oacute;n de ingenier&iacute;a de software" 
+        width = "100" height= "100">
+        <p>Las observaciones de ingenier&iacute;a de software resaltan los 
+        asuntos de arquitectura y dise&ntilde;o que afectan en la 
+        construcci&oacute;n de sistemas de software, en especial los 
+        sistemas de gran escala.</p>
+      </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br>
+    <nav>
+      <table border="1">
+        <thead>
+          <tr>
+            <th><a>Menú</a></th>
+            <th><a href="./Ejercicio10.html">Anterior</a></th>
+            <th><a href="./Ejercicio12.html">Siguiente</a></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td colspan="3"><a href="../">Regresar</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio1.html">Ejercicio1</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio2.html">Ejercicio2</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio3.html">Ejercicio3</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio4.html">Ejercicio4</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio5.html">Ejercicio5</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio6.html">Ejercicio6</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio7.html">Ejercicio7</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio8.html">Ejercicio8</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio9.html">Ejercicio9</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio10.html">Ejercicio10</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio11.html">Ejercicio11</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio12.html">Ejercicio12</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio13.html">Ejercicio13</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio14.html">Ejercicio14</a></td></tr>
+        </tbody>
+      </table>
+    </nav>
+  </body>
+</html>

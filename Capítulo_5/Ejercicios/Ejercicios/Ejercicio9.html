@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 9</title>
+    <style type="text/css">
+      #portada {
+       position: relative;
+       width: 500px;
+       height: 500px;
+       margin: 0 auto;
+      }
+      #portada img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 500px;
+        height: 500px;
+        -webkit-transition: opacity 1s ease-in-out;
+        transition: opacity 2s ease-in-out;
+      }
+      #portada .img1 {
+        z-index: 1;
+      }
+      #portada .img2 {
+        z-index: 2;
+      }
+      #portada .img3 {
+        z-index: 3;
+      }
+      #portada .img4 {
+        z-index: 4;
+      }
+      #portada .img5 {
+        z-index: 5;
+      }
+      #portada:hover .img5 {
+        opacity: 0;
+      }
+      #portada:hover .img4 {
+        opacity: 0;
+      }
+
+      #portada:hover .img3 {
+        opacity: 0;
+      }
+      #portada:hover .img2 {
+        opacity: 0;
+      }
+      nav { 
+        font-weight: bold;
+        color: white; 
+        background-color: royalblue;
+        border: 2px solid royalblue;
+        text-align: center;
+        width: 14.6em
+      }
+      nav table {
+        margin: 0;
+        padding: 0
+      }
+      nav:hover table tbody {
+        display: table-row-group;
+      }
+      nav table tbody {
+        display: none;
+        background-color: white;
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+      }
+      nav tbody a {
+        color: black
+      }
+    </style>
+  </head>
+  <body>
+      <div id="portada">
+        <img src="./Ejercicio9_images/madrugada.jpeg" class="img1">
+        <img src="./Ejercicio9_images/amanecer.jpg" class="img2">
+        <img src="./Ejercicio9_images/dia.jpg" class="img3">
+        <img src="./Ejercicio9_images/tarde.jpeg" class="img4">
+        <img src="./Ejercicio9_images/anochecer.jpeg" class="img5">
+        <img src="./Ejercicio9_images/noche.jpg" class="img6">
+
+      </div>
+      <nav>
+        <table border="1">
+          <thead>
+            <tr>
+              <th><a>Menú</a></th>
+              <th><a href="./Ejercicio8.html">Anterior</a></th>
+              <th><a href="./Ejercicio10.html">Siguiente</a></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td colspan="3"><a href="../">Regresar</a></td></tr>
+            <tr><td colspan="3"><a href="./Ejercicio1.html">Ejercicio 1</a></td></tr>
+            <tr><td colspan="3"><a href="./Ejercicio2.html">Ejercicio 2</a></td></tr>
+            <tr><td colspan="3"><a href="./Ejercicio3.html">Ejercicio 3</a></td></tr>
+            <tr><td colspan="3"><a href="./Ejercicio4.html">Ejercicio 4</a></td></tr>
+            <tr><td colspan="3"><a href="./Ejercicio5.html">Ejercicio 5</a></td></tr>
+            <tr><td colspan="3"><a href="./Ejercicio6.html">Ejercicio 6</a></td></tr>
+            <tr><td colspan="3"><a href="./Ejercicio7.html">Ejercicio 7</a></td></tr>
+            <tr><td colspan="3"><a href="./Ejercicio8.html">Ejercicio 8</a></td></tr>
+            <tr><td colspan="3"><a href="./Ejercicio9.html">Ejercicio 9</a></td></tr>
+            <tr><td colspan="3"><a href="./Ejercicio10.html">Ejercicio 10</a></td></tr>
+            <tr><td colspan="3"><a href="./Ejercicio11.html">Ejercicio 11</a></td></tr>
+            <tr><td colspan="3"><a href="./Ejercicio12.html">Ejercicio 12</a></td></tr>
+            <tr><td colspan="3"><a href="./Ejercicio13.html">Ejercicio 13</a></td></tr>
+            <tr><td colspan="3"><a href="./Ejercicio14.html">Ejercicio 14</a></td></tr>
+          </tbody>
+        </table>
+      </nav>
+  </body>
+</html>
