@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!-- Ejemplo6.html -->
+<html>
+  <head>
+    <meta charset = "utf-8">
+    <title>Uso de instrucción de repetición do...while</title>
+    <style type = "text/css">
+
+      nav { font-weight: bold; color:white; background-color: royalblue; border: 2px solid royalblue; text-align: center; width: 14.6em}
+      nav table {margin: 0; padding: 0}
+      nav:hover table tbody {display:table-row-group;}
+      nav table tbody {display: none; background-color: white;}
+      nav a {color: white; text-decoration: none;}
+      nav tbody a {color: black}
+
+    </style>
+  </head>
+  <body>
+    <script type = "text/javascript">
+      var contador = 1;
+      do {
+        document.writeln("<h" + contador + ">&Eacute;ste es un encabezado de nivel h" + contador + "</h" + contador + ">");
+        ++contador;
+      } while (contador <= 6);
+    </script>
+    <br>
+
+    <nav>
+      <table border="1">
+        <thead><tr><th><a>Menú</a></th><th><a href="./Ejemplo5.html">Anterior</a></th><th><a href="./Ejemplo7.html">Siguiente</a></th></tr></thead>
+        <tbody><tr><td colspan="3"><a href="../">Regresar</a></td></tr><tr><td colspan="3"><a href="./Ejemplo1.html">Ejemplo1</a></td></tr><tr><td colspan="3"><a href="./Ejemplo2.html">Ejemplo2</a></td></tr><tr><td colspan="3"><a href="./Ejemplo3.html">Ejemplo3</a></td></tr><tr><td colspan="3"><a href="./Ejemplo4.html">Ejemplo4</a></td></tr><tr><td colspan="3"><a href="./Ejemplo5.html">Ejemplo5</a></td></tr><tr><td colspan="3"><a href="./Ejemplo6.html">Ejemplo6</a></td></tr><tr><td colspan="3"><a href="./Ejemplo7.html">Ejemplo7</a></td></tr><tr><td colspan="3"><a href="./Ejemplo8.html">Ejemplo8</a></td></tr></tbody>
+      </table>
+    </nav>
+  </body>
+</html>

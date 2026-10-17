@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset = "utf-8">
+    <title>Ejercicio 3</title>
+    <script>
+      var viaje,km,total_km = 0, lt,total_lt = 0, km_lt;
+      var x = 1, viaje_int;
+
+      viaje = window.prompt("Escriba la cantidad de viajes que ha tomado","0");
+      viaje_int = parseInt(viaje);
+      while (x <= viaje_int){
+        console.log("Viaje número: " + x);
+        km = parseFloat(window.prompt("Escribe la cantidad de kilómetros conducidos en el viaje No. " + x,"0"));
+        total_km = total_km + km;
+        lt = parseFloat(window.prompt("Escribe la cantidad de litros usados en el viaje No. "+x, "0"));
+        total_lt = total_lt + lt; 
+        x++;
+      }
+      km_lt = total_km / total_lt;
+      document.writeln("<h2>Información total</h2><br><p><strong>Kilometros totales:</strong> "+ total_km + "<br><strong>Litros totales: </strong>" + total_lt + "<br><strong>Kilometros por litro en total: </strong>"+ km_lt+"</p>");
+    </script>
+    <style type = "text/css">
+      h2 {color: red}
+      strong {color: teal}
+      nav { font-weight: bold;
+            color:white;
+            background-color: royalblue;
+            border: 2px solid royalblue;
+            text-align: center;
+            width: 14.6em}
+      nav table {margin: 0;
+                 padding: 0}
+      nav:hover table tbody {display:table-row-group;}
+      nav table tbody {display: none; background-color: white;}
+      nav a {color: white;
+             text-decoration: none;}
+      nav tbody a {color: black}
+    </style>
+  </head>
+  <body>
+    <p> <strong>Algoritmo</strong><br><br>
+
+      var viaje,km,total_km = 0, lt,total_lt = 0, km_lt;<br>
+      var x = 1, viaje_int;<br>
+
+      viaje = window.prompt("Escriba la cantidad de viajes que ha tomado","0");<br>
+      viaje_int = parseInt(viaje);<br>
+      while (x &lt;= viaje_int){ <br>
+        &ensp;&ensp;console.log("Viaje número: " + x);<br>
+        &ensp;&ensp;km = parseFloat(window.prompt("Escribe la cantidad de kilómetros conducidos en el viaje No. " + x,"0"));<br>
+        &ensp;&ensp;total_km = total_km + km;<br>
+        &ensp;&ensp;lt = parseFloat(window.prompt("Escribe la cantidad de litros usados en el viaje No. "+x, "0"));<br>
+        &ensp;&ensp;total_lt = total_lt + lt; <br>
+        &ensp;&ensp;x++;<br>
+      }<br>
+      km_lt = total_km / total_lt;<br>
+      document.writeln("&lt;h2&gt;Información total&lt;/h2&gt;&lt;br&gt;&lt;p&gt;&lt;strong&gt;Kilometros totales:&lt;/strong&gt; "+ total_km + "&lt;br&gt;&lt;strong&gt;Litros totales: &lt;/strong&gt;" + total_lt + "&lt;br&gt;&lt;strong&gt;Kilometros por litro en total: &lt;/strong&gt;"+ km_lt+"&lt;/p&gt;");
+
+    </p>
+    <nav>
+      <table border="1">
+        <thead>
+          <tr>
+            <th><a>Menú</a></th>
+            <th><a href="./Ejercicio2.html">Anterior</a></th>
+            <th><a href="./Ejercicio4.html">Siguiente</a></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td colspan="3"><a href="../">Regresar</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio1.html">Ejercicio1</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio2.html">Ejercicio2</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio3.html">Ejercicio3</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio4.html">Ejercicio4</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio5.html">Ejercicio5</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio6.html">Ejercicio6</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio7.html">Ejercicio7</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio8.html">Ejercicio8</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio9.html">Ejercicio9</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio10.html">Ejercicio10</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio11.html">Ejercicio11</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio12.html">Ejercicio12</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio13.html">Ejercicio13</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio14.html">Ejercicio14</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio15.html">Ejercicio15</a></td></tr>
+        </tbody>
+      </table>
+    </nav>
+  </body>
+</html>

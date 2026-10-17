@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset = "utf-8">
+    <title>Ejercicio 10</title>
+    <style type = "text/css">
+      h2 {color: red}
+      strong {color: teal}
+      nav { font-weight: bold;
+            color:white;
+            background-color: royalblue;
+            border: 2px solid royalblue;
+            text-align: center;
+            width: 14.6em}
+      nav table {margin: 0;
+                 padding: 0}
+      nav:hover table tbody {display:table-row-group;}
+      nav table tbody {display: none; background-color: white;}
+      nav a {color: white;
+             text-decoration: none;}
+      nav tbody a {color: black}
+    </style>
+  </head>
+  <body>
+    <h2>Sin ejecutar la siguiente secuencia de comandos, determine lo que imprime</h2>
+    <p>
+      <strong>Código</strong><br><br>
+      var fila =  10;<br>
+      var columna;<br><br>
+
+      while ( fila &gt;= 1)<br>
+      {<br>
+        &ensp;&ensp;columna = 1;<br>
+        &ensp;&ensp;document.write("&lt;p&gt;");<br><br>
+
+        &ensp;&ensp;while (columna &lt;= 10 )<br>
+        &ensp;&ensp;{<br>
+          &ensp;&ensp;&ensp;&ensp;document.write(fila % 2 == 1 ? "&lt;" : "&gt;");<br>
+          &ensp;&ensp;&ensp;&ensp;++columna; <br>
+          &ensp;&ensp;&ensp;&ensp;} //end while <br><br> 
+          &ensp;&ensp;&ensp;&ensp;--fila;<br>
+          &ensp;&ensp;&ensp;&ensp;document.write("&lt;/p&gt;");<br>
+      } // end while
+    </p>
+    <p>
+      <strong>Lo que va a hacer</strong><br><br>
+      Lo que hace es hacer bucles anidados e impormir 10 filas, pero cada fila va a tener un &lt; o un &gt; dependiendo si es par o impar.<br>En caso de ser impar va a imprimir un &lt;, en caso de ser par imprimirá un &gt;
+
+    </p>
+    <nav>
+      <table border="1">
+        <thead>
+          <tr>
+            <th><a>Menú</a></th>
+            <th><a href="./Ejercicio9.html">Anterior</a></th>
+            <th><a href="./Ejercicio11.html">Siguiente</a></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td colspan="3"><a href="../">Regresar</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio1.html">Ejercicio1</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio2.html">Ejercicio2</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio3.html">Ejercicio3</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio4.html">Ejercicio4</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio5.html">Ejercicio5</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio6.html">Ejercicio6</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio7.html">Ejercicio7</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio8.html">Ejercicio8</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio9.html">Ejercicio9</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio10.html">Ejercicio10</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio11.html">Ejercicio11</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio12.html">Ejercicio12</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio13.html">Ejercicio13</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio14.html">Ejercicio14</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio15.html">Ejercicio15</a></td></tr>
+        </tbody>
+      </table>
+    </nav>
+  </body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset = "utf-8">
+    <title>Ejercicio 3</title>
+    <style type = "text/css">
+      h2 {color: red}
+      strong {color: teal}
+      nav { font-weight: bold;
+            color:white; 
+            background-color: royalblue;
+            border: 2px solid royalblue;
+            text-align: center;
+            width: 14.6em}
+      nav table {margin: 0;
+              padding: 0}
+      nav:hover table tbody {display:table-row-group;}
+      nav table tbody {display: none; background-color: white;}
+      nav a {color: white;
+             text-decoration: none;}
+      nav tbody a {color: black}
+    </style>
+  </head>
+
+  <body>
+          <h2>Suponga que i = 1, j = 2, k = 3 y m = 2. ¿Qué es lo que imprime cada una de las siguinetes instrucciones?</h2>
+          <p>
+            <b>a)</b><br>
+            <strong>Código</strong><br>
+            document.writeln( i == 1);
+            <strong>Lo que hace</strong><br>
+            Va a imprimir true ya que es verdad la condición
+          </p>
+          <p>
+            <b>b)</b><br>
+            <strong>Código</strong><br>
+            document.writeln( j == 3);
+            <strong>Lo que hace</strong><br>
+            Va a imprimir false ya que es falso porque j no es igual a 3
+          </p>
+          <p>
+            <b>c)</b><br>
+            <strong>Código</strong><br>
+            document.writeln( i &gt;= 1 &amp;&amp; j &lt; 4 );
+            <strong>Lo que hace</strong><br>
+            Va a imprimir true ya que es verdad la condición, primero valida si i es mayor o igual a 1 y después si j es menor a 4, ambas deben de ser ciertas
+          </p>
+          <p>
+            <b>d)</b><br>
+            <strong>Código</strong><br>
+            document.writeln ( m &lt;= 99 &amp;&amp; k &lt; m );
+            <strong>Lo que hace</strong><br>
+            Va a imprimir false ya que es falso porque k no es menor que m y se deben de cumplir ambas condiciones
+          </p>
+          <p>
+            <b>e)</b><br>
+            <strong>Código</strong><br>
+            docuemnt.writeln( j &gt; i || k == m );
+            <strong>Lo que hace</strong><br>
+            Va a imprimir true porque j si es mayor que i y con || solo necesitamos que mínmo una condición se cumpla
+          </p>
+          <p>
+            <b>f)</b><br>
+            <strong>Código</strong><br>
+            document.writeln( k + m &lt; j || 3 - k &gt;= k);
+            <strong>Lo que hace</strong><br>
+            Va a imprimir false ya que es ninguna de las 2 condiciones se cumple
+          </p>
+          <p>
+            <b>g)</b><br>
+            <strong>Código</strong><br>
+            document.writeln( !(k &gt; m ) );
+            <strong>Lo que hace</strong><br>
+            Va a imprimir false ya que k si es mayor que m pero con el ! se niega esa afirmación
+          </p>
+cu
+
+    <nav>
+      <table border="1">
+        <thead>
+          <tr>
+            <th><a>Menú</a></th>
+            <th><a href="./Ejercicio8.html">Anterior</a></th>
+            <th><a href="./Ejercicio10.html">Siguiente</a></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td colspan="3"><a href="../">Regresar</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><a href="./Ejercicio1.html">Ejercicio1</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><a href="./Ejercicio2.html">Ejercicio2</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><a href="./Ejercicio3.html">Ejercicio 3</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><a href="./Ejercicio4.html">Ejercicio4</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><a href="./Ejercicio5.html">Ejercicio5</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><a href="./Ejercicio6.html">Ejercicio 6</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><a href="./Ejercicio7.html">Ejercicio7</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><a href="./Ejercicio8.html">Ejercicio8</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><a href="./Ejercicio9.html">Ejercicio 9</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><a href="./Ejercicio10.html">Ejercicio 10</a></td>
+          </tr>
+
+
+        </tbody>
+      </table>
+    </nav>
+
+  </body>
+</html>

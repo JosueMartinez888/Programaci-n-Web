@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset = "utf-8">
+    <title>Ejercicio 3</title>
+    <style type = "text/css">
+      h2 {color: red}
+      strong {color: teal}
+      nav { font-weight: bold;
+            color:white; 
+            background-color: royalblue;
+            border: 2px solid royalblue;
+            text-align: center;
+            width: 8.8em}
+      nav table {margin: 0;
+              padding: 0}
+      nav:hover table tbody {display:table-row-group;}
+      nav table tbody {display: none; background-color: white;}
+      nav a {color: white;
+             text-decoration: none;}
+      nav tbody a {color: black}
+    </style>
+  </head>
+
+  <body>
+    <h2>Encuentre el error en cada uno de los siguientes segmentos de código y explique cómo corregirlo</h2>
+    <p>
+      <b>a)</b><br>
+      <strong>Código</strong><br>
+      x = 1;<br>
+      while ( x &lt;= 10 );<br>
+      &ensp;&ensp;++x;<br>
+      }<br>
+      <strong>Error y como corregirlo</strong><br>
+      El error está que un while no termina después de la condición con un ;, sino que abre con una llave, entonces solo corrigiendo es colocar una '{}'
+    </p>
+    <p>
+      <b>b)</b><br>
+      <strong>Código</strong><br>
+      switch (n)<br>
+      {<br>
+      &ensp;&ensp;case 1:<br>
+&ensp;&ensp;&ensp;&ensp;document.writeln("El n&amp;uacute;mero es 1");<br>
+      &ensp;&ensp;case 2:<br>
+&ensp;&ensp;&ensp;&ensp;document.writeln("El n&amp;uacute;mero es 2");<br>
+&ensp;&ensp;&ensp;&ensp;break;<br>
+      &ensp;&ensp;default: <br>
+&ensp;&ensp;&ensp;&ensp;document.writeln("El n&amp;uacute;mero no es 1 ni 2");<br>
+&ensp;&ensp;&ensp;&ensp;break;<br>
+      }<br>
+      <strong>Error y comoo corregirlo</strong><br>
+      El error es que falta el break del caso 1, solo se le agrega un 'break;'
+    </p>
+    <p>
+      <b>c)El siguiente código debe imprimir valores 1 a 10:</b><br>
+      <strong>Código</strong><br>
+      n = 1;<br>
+      while ( n &lt; 10 )<br>
+      &ensp;&ensp;document.writeln(n++);<br>
+      <strong>Error y comoo corregirlo</strong><br>
+      El error está en que solo va a llegar a 9, se tiene que cambiar el '&lt;' y colocar '&lt;='
+    </p>
+
+
+    <nav>
+      <table border="1">
+        <thead>
+          <tr>
+            <th><a>Menú</a></th>
+            <th><a href="./Ejercicio2.html">Anterior</a></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td colspan="3"><a href="../">Regresar</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><a href="./Ejercicio1.html">Ejercicio1</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><a href="./Ejercicio2.html">Ejercicio2</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><a href="./Ejercicio3.html">Ejercicio 3</a></td>
+          </tr>
+
+        </tbody>
+      </table>
+    </nav>
+
+  </body>
+</html>

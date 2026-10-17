@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- Ejemplo4.html -->
+<html>
+  <head>
+    <meta charset = "utf-8">
+    <title>Cálculo del interés compuesto</title>
+    <style type = "text/css">
+      table {width: 300px; border-collapse: collapse; background-color: lightblue;}
+      table, td, th {border: 1px solid black; padding: 4px;}
+      th {text-align: left; color:white; background-color: darkblue;}
+      tr.filaimpar {background-color: white;}
+
+      nav { font-weight: bold; color:white; background-color: royalblue; border: 2px solid royalblue; text-align: center; width: 14.6em}
+      nav table {margin: 0; padding: 0}
+      nav:hover table tbody {display:table-row-group;}
+      nav table tbody {display: none; background-color: white;}
+      nav a {color: white; text-decoration: none;}
+      nav tbody a {color: black}
+
+    </style>
+  </head>
+  <body>
+    <script type = "text/javascript">
+      var monto;
+      var principal = 1000.00;
+      var tasa = 0.05;
+      document.writeln("<table>");
+      document.writeln("<caption>Cálculo del interés compuesto</caption>");
+      document.writeln("<thead><tr><th>Año</th><th>Monto en depósito</th></tr></thead><tbody>");
+      for (var anio = 1; anio <= 10; ++anio)
+      {
+        monto = principal * Math.pow(1.0 + tasa, anio);
+        if (anio % 2 !== 0)
+          document.writeln("<tr class='filaimpar'><td>" + anio + "</td><td>" + monto.toFixed(2) + "</td></tr>");
+        else
+          document.writeln("<tr><td>" + anio + "</td><td>" + monto.toFixed(2) + "</td></tr>");
+      }
+      document.writeln("</tbody></table>
+    </script>
+    <br>
+
+    <nav>
+      <table border="1">
+        <thead><tr><th><a>Menú</a></th><th><a href="./Ejemplo3.html">Anterior</a></th><th><a href="./Ejemplo5.html">Siguiente</a></th></tr></thead>
+        <tbody><tr><td colspan="3"><a href="../">Regresar</a></td></tr><tr><td colspan="3"><a href="./Ejemplo1.html">Ejemplo1</a></td></tr><tr><td colspan="3"><a href="./Ejemplo2.html">Ejemplo2</a></td></tr><tr><td colspan="3"><a href="./Ejemplo3.html">Ejemplo3</a></td></tr><tr><td colspan="3"><a href="./Ejemplo4.html">Ejemplo4</a></td></tr><tr><td colspan="3"><a href="./Ejemplo5.html">Ejemplo5</a></td></tr><tr><td colspan="3"><a href="./Ejemplo6.html">Ejemplo6</a></td></tr><tr><td colspan="3"><a href="./Ejemplo7.html">Ejemplo7</a></td></tr><tr><td colspan="3"><a href="./Ejemplo8.html">Ejemplo8</a></td></tr></tbody>
+      </table>
+    </nav>
+  </body>
+</html>

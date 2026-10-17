@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset = "utf-8">
+    <title>Ejercicio 4</title>
+    <script>
+      var num_cuenta, saldo_inicio, total_articulos, total_creditos, limite_credito, saldo = 0;
+      num_cuenta = parseInt(window.prompt("Escribe tu número de cuenta", "0"));
+      saldo_inicio = parseFloat(window.prompt("Escrige tu saldo al inicio del mes","0"));
+      total_articulos = parseInt(window.prompt("Escribe el total de todos los artículos cargados por el cliente en este mes","0"));
+      total_creditos = parseInt(window.prompt("Escribe el total de créditos a los que has aplicados a la cuenta del cliente en este mes","0"));
+      limite_credito = parseInt(window.prompt("Escribe el límite el crédito permitido","0"));
+
+      saldo = saldo_inicio + total_articulos - total_creditos;
+      document.writeln("<h2>Balance</h2>");
+      document.writeln("<p>");
+      document.writeln("<strong>Saldo actual: </strong>"+ saldo);
+      document.writeln("<br><strong>Límite de crédito permitido: </strong>"+ limite_credito);
+      if ( saldo > limite_credito)
+        document.writeln("<br><b class = 'negar'>Se excedio el límite de su crédito</b>")
+      else
+        document.writeln("<br><b class = 'aceptar'>Aún no ha excedido el límite de su crédito</b>")
+      document.writeln("</p>");
+    </script>
+    <style type = "text/css">
+      .negar {color: red}
+      .aceptar {color: green}
+      h2 {color: red}
+      strong {color: teal}
+      nav { font-weight: bold;
+            color:white;
+            background-color: royalblue;
+            border: 2px solid royalblue;
+            text-align: center;
+            width: 14.6em}
+      nav table {margin: 0;
+                 padding: 0}
+      nav:hover table tbody {display:table-row-group;}
+      nav table tbody {display: none; background-color: white;}
+      nav a {color: white;
+             text-decoration: none;}
+      nav tbody a {color: black}
+    </style>
+  </head>
+  <body>
+    <p><strong>Algoritmo</strong><br><br>
+      var num_cuenta, saldo_inicio, total_articulos, total_creditos, limite_credito, saldo = 0;<br>
+      num_cuenta = parseInt(window.prompt("Escribe tu número de cuenta", "0"));<br>
+      saldo_inicio = parseFloat(window.prompt("Escrige tu saldo al inicio del mes","0"));<br>
+      total_articulos = parseInt(window.prompt("Escribe el total de todos los artículos cargados por el cliente en este mes","0"));<br>
+      total_creditos = parseInt(window.prompt("Escribe el total de créditos a los que has aplicados a la cuenta del cliente en este mes","0"));<br>
+      limite_credito = parseInt(window.prompt("Escribe el límite el crédito permitido","0"));<br><br>
+
+      saldo = saldo_inicio + total_articulos - total_creditos;<br>
+      document.writeln("&lt;h2&gt;Balance&lt;/h2&gt;");<br>
+      document.writeln("&lt;p&gt;");<br>
+      document.writeln("&lt;strong&gt;Saldo actual: &lt;/strong&gt;"+ saldo);<br>
+      document.writeln("&lt;br&gt;&lt;strong&gt;Límite de crédito permitido: &lt;/strong&gt;"+ limite_credito);<br>
+      if ( saldo &gt; limite_credito)<br>
+        &ensp;&ensp;document.writeln("&lt;br&gr;&lt;b class = 'negar'&gt;Se excedio el límite de su crédito&lt;/b&gt;")<br>
+      else <br>
+        &ensp;&ensp;document.writeln("&lt;br&gt;&lt;b class = 'aceptar'&gt;Aún no ha excedido el límite de su crédito&lt;/b&gt;")<br>
+      document.writeln("&lt;/p&gt;");
+    </p>
+    <nav>
+      <table border="1">
+        <thead>
+          <tr>
+            <th><a>Menú</a></th>
+            <th><a href="./Ejercicio3.html">Anterior</a></th>
+            <th><a href="./Ejercicio5.html">Siguiente</a></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td colspan="3"><a href="../">Regresar</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio1.html">Ejercicio1</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio2.html">Ejercicio2</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio3.html">Ejercicio3</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio4.html">Ejercicio4</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio5.html">Ejercicio5</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio6.html">Ejercicio6</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio7.html">Ejercicio7</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio8.html">Ejercicio8</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio9.html">Ejercicio9</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio10.html">Ejercicio10</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio11.html">Ejercicio11</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio12.html">Ejercicio12</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio13.html">Ejercicio13</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio14.html">Ejercicio14</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio15.html">Ejercicio15</a></td></tr>
+        </tbody>
+      </table>
+    </nav>
+  </body>
+</html>

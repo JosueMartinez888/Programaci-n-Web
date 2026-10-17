@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset = "utf-8">
+    <title>Ejercicio 2</title>
+    <script>
+      // a) sumar numeros enteros impares entre 1 y 99, utilice for. Suponga que se han declarado las variables suma y cuenta
+      var sumar = 0, cuenta;
+      for (cuenta = 1; cuenta <=99; cuenta++){
+        if (cuenta %2 == 1){
+          sumar += cuenta;
+        }
+      }
+      document.writeln("<h2>Escriba una instrucción o un conjunto de instrucciones en JavaScript para realizar cada una de als siguientes tareas:</h2>");
+      document.writeln("<strong>a)Sumar los enteros impares entre 1 y 99</strong><br>");
+      document.writeln("<b>La suma de todos los números impares entre 1 y 99 es: </b>" + cuenta);
+
+      // Calcular el valor de 2.5 elevado a la potencia de 3
+      var num=2.5, potencia=3, resultado;
+      resultado = Math.pow(num,potencia);
+
+      document.writeln("<br><br><strong>b)Calcular el valor de 2.5 elevado a la potencia de 3</strong><br>");
+      document.writeln("<b>La tercera potencia de 2.5 es: </b>" + resultado);
+      // Imprimir los enteros del 1 al 20 mediante el uso del ciclo while, imprimir solamente 5 enteros por linea
+      document.writeln("<br><br><strong>c)Imprimir los enteros del 1 al 20 mediante el uso del ciclo while, imprimir solamente 5 enteros por linea</strong><br>");
+
+      var x = 1;
+      while (x <= 20){
+        document.write(x + "&ensp;");
+        if (x % 5 == 0)
+          document.write("<br>");
+        x++;
+      }
+      
+      // Repertir el inciso c pero ahora que use una instruccion for
+      document.writeln("<br><strong>c)Repertir el inciso c pero ahora que use una instruccion for</strong><br>");
+      for (x = 1; x <= 20; x++){
+        document.write(x + "&ensp;");
+        if (x % 5 == 0)
+          document.write("<br>");
+      }
+      document.write("<br>")
+
+
+
+
+    </script>
+    <style type = "text/css">
+      h2 {color: red}
+      strong {color: teal}
+      nav { font-weight: bold;
+            color:white; 
+            background-color: royalblue;
+            border: 2px solid royalblue;
+            text-align: center;
+            width: 14.6em}
+      nav table {margin: 0;
+              padding: 0}
+      nav:hover table tbody {display:table-row-group;}
+      nav table tbody {display: none; background-color: white;}
+      nav a {color: white;
+             text-decoration: none;}
+      nav tbody a {color: black}
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <table border="1">
+        <thead>
+          <tr>
+            <th><a>Menú</a></th>
+            <th><a href="./Ejercicio1.html">Anterior</a></th>
+            <th><a href="./Ejercicio3.html">Siguiente</a></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td colspan="3"><a href="../">Regresar</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><a href="./Ejercicio1.html">Ejercicio1</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><a href="./Ejercicio2.html">Ejercicio2</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><a href="./Ejercicio3.html">Ejercicio 3</a></td>
+          </tr>
+
+        </tbody>
+      </table>
+    </nav>
+
+  </body>
+</html>

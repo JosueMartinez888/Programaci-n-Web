@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ejercicio 5</title>
+    <script type="text/javascript">
+      var valor_art1 = 239.99, valor_art2 = 129.75, valor_art3 = 99.95, valor_art4 = 350.89;
+      var articulo, ingreso_semanal = 200, comision = 0, ganancia = 0, eleccion;
+      var cantidad_articulo1 = 0, cantidad_articulo2 = 0, cantidad_articulo3 = 0, cantidad_articulo4 = 0;
+      var ganancia_articulo1 = 0, ganancia_articulo2 = 0, ganancia_articulo3 = 0, ganancia_articulo4 = 0;
+
+      while (true) {
+        eleccion = parseInt(window.prompt("Ingrese una opción\n1. Calcular ingresos\n2. Salir", "1"));
+
+        if (eleccion == 1) {
+          while (true) {
+            articulo = parseInt(window.prompt("Ingrese el artículo que va a declarar [1-4], presione el 5 para salir", "5"));
+
+            if (articulo == 1) {
+              cantidad_articulo1 = parseInt(window.prompt("Indica la cantidad que vendiste de ese artículo", "0"));
+              ganancia_articulo1 = valor_art1 * cantidad_articulo1;
+              ganancia += ganancia_articulo1;
+            } else if (articulo == 2) {
+              cantidad_articulo2 = parseInt(window.prompt("Indica la cantidad que vendiste de ese artículo", "0"));
+              ganancia_articulo2 = valor_art2 * cantidad_articulo2;
+              ganancia += ganancia_articulo2;
+            } else if (articulo == 3) {
+              cantidad_articulo3 = parseInt(window.prompt("Indica la cantidad que vendiste de ese artículo", "0"));
+              ganancia_articulo3 = valor_art3 * cantidad_articulo3;
+              ganancia += ganancia_articulo3;
+            } else if (articulo == 4) {
+              cantidad_articulo4 = parseInt(window.prompt("Indica la cantidad que vendiste de ese artículo", "0"));
+              ganancia_articulo4 = valor_art4 * cantidad_articulo4;
+              ganancia += ganancia_articulo4;
+            } else if (articulo == 5) {
+              comision = 9 * ganancia / 100;
+              break;
+            } else {
+              window.alert("Ese artículo no existe");
+            }
+          }
+          break; // sale del menú principal para mostrar los resultados
+        } else if (eleccion == 2) {
+          break;
+        } else {
+          window.alert("Esa opción no existe");
+        }
+      }
+
+      document.writeln("<h2>Ingresos</h2>");
+      document.writeln("<p>");
+      document.writeln("<strong>Ganancia semanal: </strong>" + ingreso_semanal + "<br><br>");
+      document.writeln("<strong>Ventas del artículo 1: </strong>" + cantidad_articulo1 + "<br>");
+      document.writeln("<strong>Ganancia: </strong>" + ganancia_articulo1 + "<br><br>");
+
+      document.writeln("<strong>Ventas del artículo 2: </strong>" + cantidad_articulo2 + "<br>");
+      document.writeln("<strong>Ganancia: </strong>" + ganancia_articulo2 + "<br><br>");
+
+      document.writeln("<strong>Ventas del artículo 3: </strong>" + cantidad_articulo3 + "<br>");
+      document.writeln("<strong>Ganancia: </strong>" + ganancia_articulo3 + "<br><br>");
+
+      document.writeln("<strong>Ventas del artículo 4: </strong>" + cantidad_articulo4 + "<br>");
+      document.writeln("<strong>Ganancia: </strong>" + ganancia_articulo4 + "<br><br>");
+
+      document.writeln("<strong>Ganancia de venta total: </strong>" + ganancia + "<br>");
+      document.writeln("<strong>Ganancia por comisión (9%): </strong>" + comision + "<br>");
+      document.writeln("<strong>Ingreso semanal: </strong>" + ingreso_semanal+"<br>");
+      document.writeln("<strong>Ganancia total: </strong>" + (comision + ingreso_semanal) + "<br>");
+      document.writeln("</p>");
+    </script>
+    <style type="text/css">
+      h2 {color: red}
+      strong {color: teal}
+      nav { font-weight: bold;
+            color: white;
+            background-color: royalblue;
+            border: 2px solid royalblue;
+            text-align: center;
+            width: 14.6em}
+      nav table {margin: 0;
+                 padding: 0}
+      nav:hover table tbody {display: table-row-group;}
+      nav table tbody {display: none; background-color: white;}
+      nav a {color: white;
+             text-decoration: none;}
+      nav tbody a {color: black}
+    </style>
+  </head>
+  <body>
+    <br><br>
+    <p>
+    <strong>Profe la verdad es un buen de codigo para ponerlo acá, porque es cambiar todos los &amp;lt; y todos los &amp;gt; junto con el &amp;ensp; para los espaciados</strong>
+    </p>
+    <nav>
+      <table border="1">
+        <thead>
+          <tr>
+            <th><a>Menú</a></th>
+            <th><a href="./Ejercicio4.html">Anterior</a></th>
+            <th><a href="./Ejercicio6.html">Siguiente</a></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td colspan="3"><a href="../">Regresar</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio1.html">Ejercicio1</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio2.html">Ejercicio2</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio3.html">Ejercicio3</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio4.html">Ejercicio4</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio5.html">Ejercicio5</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio6.html">Ejercicio6</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio7.html">Ejercicio7</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio8.html">Ejercicio8</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio9.html">Ejercicio9</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio10.html">Ejercicio10</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio11.html">Ejercicio11</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio12.html">Ejercicio12</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio13.html">Ejercicio13</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio14.html">Ejercicio14</a></td></tr>
+          <tr><td colspan="3"><a href="./Ejercicio15.html">Ejercicio15</a></td></tr>
+        </tbody>
+      </table>
+    </nav>
+  </body>
+</html>

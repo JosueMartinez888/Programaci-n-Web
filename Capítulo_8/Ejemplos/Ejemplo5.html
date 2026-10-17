@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- Ejemplo5.html -->
+<html>
+  <head>
+    <meta charset = "utf-8">
+    <title>Alternar entre formatos de lista de HTML5</title>
+    <style type = "text/css">
+
+      nav { font-weight: bold; color:white; background-color: royalblue; border: 2px solid royalblue; text-align: center; width: 14.6em}
+      nav table {margin: 0; padding: 0}
+      nav:hover table tbody {display:table-row-group;}
+      nav table tbody {display: none; background-color: white;}
+      nav a {color: white; text-decoration: none;}
+      nav tbody a {color: black}
+
+    </style>
+  </head>
+  <body>
+    <script type = "text/javascript">
+      var seleccion;
+      var etiquetaInicial;
+      var etiquetaFinal;
+      var entradaValida = true;
+      var tipoLista;
+      seleccion = window.prompt("Seleccione un estilo de lista:\\n1 (numerada), 2 (con letras), 3 (números romanos)", "1");
+      switch (seleccion)
+      {
+        case "1":
+          etiquetaInicial = "<ol>";
+          etiquetaFinal = "</ol>";
+          tipoLista = "<h1>Lista numerada</h1>";
+          break;
+        case "2":
+          etiquetaInicial = "<ol style = 'list-style-type: upper-alpha'>";
+          etiquetaFinal = "</ol>";
+          tipoLista = "<h1>Lista con letras</h1>";
+          break;
+        case "3":
+          etiquetaInicial = "<ol style = 'list-style-type: upper-roman'>";
+          etiquetaFinal = "</ol>";
+          tipoLista = "<h1>Lista de números romanos</h1>";
+          break;
+        default:
+          entradaValida = false;
+          break;
+      }
+      if (entradaValida === true)
+      {
+        document.writeln(tipoLista + etiquetaInicial);
+        for (var i = 1; i <= 3; ++i)
+          document.writeln("<li>Elemento de lista " + i + "</li>");
+        document.writeln(etiquetaFinal);
+      }
+      else
+        document.writeln("Selección inválida: " + seleccion);
+    </script>
+    <br>
+
+    <nav>
+      <table border="1">
+        <thead><tr><th><a>Menú</a></th><th><a href="./Ejemplo4.html">Anterior</a></th><th><a href="./Ejemplo6.html">Siguiente</a></th></tr></thead>
+        <tbody><tr><td colspan="3"><a href="../">Regresar</a></td></tr><tr><td colspan="3"><a href="./Ejemplo1.html">Ejemplo1</a></td></tr><tr><td colspan="3"><a href="./Ejemplo2.html">Ejemplo2</a></td></tr><tr><td colspan="3"><a href="./Ejemplo3.html">Ejemplo3</a></td></tr><tr><td colspan="3"><a href="./Ejemplo4.html">Ejemplo4</a></td></tr><tr><td colspan="3"><a href="./Ejemplo5.html">Ejemplo5</a></td></tr><tr><td colspan="3"><a href="./Ejemplo6.html">Ejemplo6</a></td></tr><tr><td colspan="3"><a href="./Ejemplo7.html">Ejemplo7</a></td></tr><tr><td colspan="3"><a href="./Ejemplo8.html">Ejemplo8</a></td></tr></tbody>
+      </table>
+    </nav>
+  </body>
+</html>
